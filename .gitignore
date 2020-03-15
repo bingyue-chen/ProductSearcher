@@ -1,0 +1,6 @@
+.DS_Store
+*.csv
+*.json
+
+__pycache__/
+*.egg-info/

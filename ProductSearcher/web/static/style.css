@@ -1,0 +1,107 @@
+/*
+ *  Product Spider Viewer Css Style
+ */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text-nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-source {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.color-gold {
+    color: #CBAF8A;
+}
+
+.bg-color-dark-blue {
+    background-color: #262932;
+}
+
+.bg-color-white {
+    background-color: #fff;
+}
+
+.a-normal:link, .a-normal:hover, .a-normal:visited, .a-normal:active {
+    color: #262932;
+    text-decoration: none;
+}
+
+.filters {
+    font-size: 1.2rem;
+}
+
+#expected-price {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+#expected-price:focus {
+    outline: none;
+}
+
+#product-search-icon {
+    cursor: pointer;
+}
+
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + .paltform-checkbox-label,
+[type="checkbox"]:checked + .paltform-checkbox-label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  /*border-bottom: 2px dotted #CBAF8A;*/
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + .paltform-checkbox-label:before,
+[type="checkbox"]:checked + .paltform-checkbox-label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 5px;
+  width: 10px; height: 20px;
+  padding-right: 6px;
+  border-right: 2px solid #CBAF8A;
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + .paltform-checkbox-label:after,
+[type="checkbox"]:checked + .paltform-checkbox-label:after {
+  content: '✔';
+  position: absolute;
+  left:0; top: 5px;
+  font-size: 14px;
+  color: #CBAF8A;
+  transition: all .2s;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + .paltform-checkbox-label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + .paltform-checkbox-label:after {
+  opacity: 1;
+  transform: scale(1);
+}

@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook copy to `./.git/hooks/` then change to executable file.
+
+default_color='\033[0m'
+red_color='\033[0;31m'
+
+# python coding style fixer
+git diff --staged --name-only --diff-filter=ACMRT | grep --color=never '.py$' | xargs yapf -d || \
+  (echo -e "\n${red_color}Please fix python coding style, run 'yapf -r -i {file or dir}', then review changes${default_color}\n"; exit 1)

@@ -1,5 +1,5 @@
 /*
- *  Product Spider Viewer JS
+ *  Product Searcher Viewer JS
  */
 
 function ready(fn){

@@ -9,8 +9,6 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-import os
-
 BOT_NAME = 'ProductSearcher'
 
 SPIDER_MODULES = ['ProductSearcher.spiders']

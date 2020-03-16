@@ -21,4 +21,11 @@
 - (poetry) enter shell `poetry shell`
 
 ## Product Search Web
-`python3.7 ProductSearcher/web/searchviewer.py`
+- start web `python3.7 ProductSearcher/web/searchviewer.py`
+
+### Product Search Web View
+
+![example1](/img/example1.png){:height="32xpx" width="512px"}
+![example2](/img/example2.png){:height="32xpx" width="512px"}
+![example3](/img/example3.png){:height="32xpx" width="512px"}
+

@@ -2,7 +2,7 @@
 name = "productsearcher"
 version = "0.1.0"
 description = "Search products from all around the world"
-authors = ["snowcookie <snow.shanalike@gmail.com>]
+authors = ["snowcookie <snow.shanalike@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
